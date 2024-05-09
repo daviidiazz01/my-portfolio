@@ -98,11 +98,11 @@ header nav.menu-desktop ul li {
     transition: .5s;
 }
 
-.menu-mobile.abrir-menu {
-    width: 70%;
+.menu-mobile.open {
+    width: 70%; 
 }
 
-.menu-mobile.abrir-menu~.overlay-menu {
+.menu-mobile.open ~ .overlay-menu {
     display: block;
 }
 

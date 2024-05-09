@@ -10,9 +10,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/logo-davi-grande.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-    <title>Davi Diaz - portfolio</title>
+    <title>Portfolio Davi Diaz</title>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
                     </ul>
                 </nav>
             </div>
-            
+
             <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
@@ -97,7 +98,7 @@
                             da sua visão e criatividade. Navegue pelos meus projetos e confira.</p>
                     </div>
 
-                    <div  id="sobre" class="especialidades-box">
+                    <div id="sobre" class="especialidades-box">
                         <i class="bi bi-cart"></i>
                         <h3>Ferramentas</h3>
                         <p>Faço uso de diversas ferramentas, incluindo Trello, Notion, Fork, GitHub, VS Code e MySQL
@@ -122,15 +123,18 @@
                     </div>
 
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>DAVI DIAZ.</span></h2>
-                        <p>Olá! Meu nome é Davi Diaz, tenho 20 anos e estou atualmente no terceiro período do curso de
-                            Análise e Desenvolvimento de Sistemas. Além da minha formação acadêmica, estou
-                            constantemente aprimorando meus conhecimentos por meio de cursos online em plataformas como
-                            Udemy e DevMedia.</p>
-                        <p>Estou atualmente buscando minha primeira oportunidade no mercado de trabalho, ansioso para
-                            contribuir com uma equipe dinâmica e aprender com as experiências que essa jornada
-                            profissional trará. Estou pronto para aplicar minha paixão, habilidades e determinação para
-                            enfrentar desafios e crescer como profissional na área de desenvolvimento de software.</p>
+                        <h2>Muito prazer, <span id="meunome"></span></h2>
+
+                        <p>Idade: <span id="idade"></span> anos</p>
+
+                        <p>Email: <span id="email"></span></p>
+
+                        <p>Telefone: <span id="telefone"></span></p>
+
+                        <p>Cidade: <span id="cidade"></span></p>
+
+                        <p>Biografia: <span id="biografia"></span></p>
+
                         <div class="btn-social">
                             <a href="https://www.instagram.com/davidiazz01/" target="_blank"><button><i
                                         class="bi bi-instagram"></i></button></a>
@@ -167,17 +171,18 @@
 
         <section id="contato" class="formulario">
             <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <h2 class="titulo">Dados Pessoais</h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                <form id="atualizarForm">
+                    <input type="text" name="nome" id="nome" placeholder="Nome:" required>
+                    <input type="email" name="email" id="email" placeholder=" E-mail:" required>
+                    <input type="text" name="celular" id="celular" placeholder="Celular:">
+                    <input type="text" name="endereco" id="endereco" placeholder="Cidade:">
+                    <textarea name="biografia" id="biografia" placeholder="Biografia" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Salvar"></div>
                 </form>
-            </div><!--interface-->
-        </section><!--formulario-->
+            </div>
+        </section>
 
     </main>
 
@@ -198,12 +203,15 @@
                     </div>
                 </div>
                 <div class="line-footer borda">
-                    <p><i class="bi bi-envelope-fill"></i> <a href="felipediaz3974@gmail.com"
-                            target="_blank">felipediaz3974@gmail.com</a></p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:felipediaz3974@gmail.com" target="_blank" id="meuemail"></a>
+                    </p>
                 </div>
+
             </div>
     </footer>
-<script src="menu.js"  defer></script>
+    <script src="menu.js" defer></script>
 </body>
 
 </html>
