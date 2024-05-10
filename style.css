@@ -78,8 +78,8 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu {
-    display: block;
-    /* Alterado para 'block' para que o botão seja exibido */
+    display: none;
+
 }
 
 .btn-abrir-menu i {

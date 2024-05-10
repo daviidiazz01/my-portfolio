@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         window.scrollTo(scrollOptions);
-    });
+    });o
 
 
 
