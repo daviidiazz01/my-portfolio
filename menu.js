@@ -75,32 +75,36 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo(scrollOptions);
     });
 
-    /*const nome = "Davi Diaz";
-    const email = "felipediaz3974@gmail.com";
-    const celular = "(83) 986533193";
-    const endereco = "João Pessoa (PB)";
-    const biografia = "Estou atualmente buscando minha primeira oportunidade no mercado de trabalho, ansioso para contribuir com uma equipe dinâmica e aprender com as experiências que essa jornada profissional trará. Estou pronto para aplicar minha paixão, habilidades e determinação para enfrentar desafios e crescer como profissional na área de desenvolvimento de software.";
-
-    const form = document.getElementById('atualizarForm');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const nomeAtualizado = document.getElementById('nome').value || nome;
-        const emailAtualizado = document.getElementById('email').value || email;
-        const celularAtualizado = document.getElementById('celular').value || celular;
-        const enderecoAtualizado = document.getElementById('endereco').value || endereco;
-        const biografiaAtualizada = document.getElementById('biografia').value || biografia;
-
-        console.log("Nome: " + nomeAtualizado);
-        console.log("E-mail: " + emailAtualizado);
-        console.log("Celular: " + celularAtualizado);
-        console.log("Endereço: " + enderecoAtualizado);
-        console.log("Biografia: " + biografiaAtualizada);
-
-    });*/
 
 
 
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    
+    const form = document.getElementById('atualizarForm');
+
+    // Ouvinte de evento para o envio do formulário
+    form.addEventListener('submit', function (event) {
+        // Evita o comportamento padrão de envio do formulário
+        event.preventDefault();
+
+        // Atualiza os dados com as informações do formulário
+        const nomeAtualizado = document.getElementById('nome_form').value;
+        const emailAtualizado = document.getElementById('email_form').value;
+        const celularAtualizado = document.getElementById('celular_form').value;
+        const enderecoAtualizado = document.getElementById('endereco_form').value;
+        const biografiaAtualizada = document.getElementById('biografia_form').value;
+        const idadeAtualizada = document.getElementById('idade_form').value;
+
+        // Atualiza os elementos HTML com as novas informações
+        document.getElementById('meunome').textContent = nomeAtualizado;
+        document.getElementById('email').textContent = emailAtualizado;
+        document.getElementById('telefone').textContent = celularAtualizado;
+        document.getElementById('cidade').textContent = enderecoAtualizado;
+        document.getElementById('biografia').textContent = biografiaAtualizada;
+        document.getElementById('idade').textContent = idadeAtualizada;
+    });
+});
+
