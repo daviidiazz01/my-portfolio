@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos gerais */
 body {
     background-color: #000;
     height: 100vh;
@@ -77,16 +79,18 @@ header nav.menu-desktop ul li {
     padding: 0 40px;
 }
 
+/* Ícone do menu inicialmente oculto */
 .btn-abrir-menu {
     display: none;
-
 }
 
+/* Estilos do ícone do menu */
 .btn-abrir-menu i {
     color: #fff200;
     font-size: 40px;
 }
 
+/* Estilos do menu mobile */
 .menu-mobile {
     background-color: #1d1d1d;
     height: 100vh;
@@ -144,6 +148,14 @@ header nav.menu-desktop ul li {
     display: block;
 }
 
+/* Media query para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    /* Exibir o ícone do menu */
+    .btn-abrir-menu {
+        display: block;
+    }
+}
+
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -174,12 +186,10 @@ section.topo-do-site .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
 @keyframes flutuar {
     0% {
         top: 0;
     }
-
     100% {
         top: 30px;
     }
