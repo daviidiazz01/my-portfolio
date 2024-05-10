@@ -14,7 +14,7 @@ let meuTelefone = "(83) 98653-3193";
 let meutelefoneElement = document.getElementById("telefone");
 meutelefoneElement.innerHTML = meuTelefone;
 
-let minhacidade = "João Pessoa, PB";
+let minhacidade = " Rua carolino cardoso, 79 / João Pessoa, PB";
 let minhacidadeElement = document.getElementById("cidade");
 minhacidadeElement.innerHTML = minhacidade;
 

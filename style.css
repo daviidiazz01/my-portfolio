@@ -99,10 +99,10 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile.open {
-    width: 70%; 
+    width: 70%;
 }
 
-.menu-mobile.open ~ .overlay-menu {
+.menu-mobile.open~.overlay-menu {
     display: block;
 }
 
