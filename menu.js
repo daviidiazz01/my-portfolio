@@ -22,8 +22,6 @@ let minhabiografia = "Estou no 3° periodo de ADS, busco conhecimento constante 
 let minhabiografiaElement = document.getElementById("biografia");
 minhabiografiaElement.innerHTML = minhabiografia;
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
 
@@ -81,12 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         window.scrollTo(scrollOptions);
-    });o
-
-
-
-
-
+    }); 
 });
 
 document.addEventListener('DOMContentLoaded', function () {
