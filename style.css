@@ -78,7 +78,8 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu {
-    display: none;
+    display: block;
+    /* Alterado para 'block' para que o botão seja exibido */
 }
 
 .btn-abrir-menu i {
@@ -87,7 +88,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile {
-    background-color: #000;
+    background-color: #1d1d1d;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -98,14 +99,9 @@ header nav.menu-desktop ul li {
     transition: .5s;
 }
 
-.menu-mobile.open {
+.menu-mobile.abrir-menu {
     width: 70%;
 }
-
-.menu-mobile.open~.overlay-menu {
-    display: block;
-}
-
 
 .menu-mobile .btn-fechar {
     padding: 20px 5%;
@@ -121,7 +117,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -142,6 +138,10 @@ header nav.menu-desktop ul li {
     left: 0;
     z-index: 88888;
     display: none;
+}
+
+.overlay-menu.active {
+    display: block;
 }
 
 section.topo-do-site {

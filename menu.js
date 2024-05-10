@@ -1,30 +1,28 @@
-let meuNome = "Davi Diaz!";
-let meunomeElement = document.getElementById("meunome");
-meunomeElement.innerHTML = meuNome;
-
-let minhaIdade = "20";
-let minhaIdadeElement = document.getElementById("idade");
-minhaIdadeElement.innerHTML = minhaIdade;
-
-let meuEmail = "felipediaz3974@gmail.com";
-let meuemailElement = document.getElementById("email");
-meuemailElement.innerHTML = meuEmail;
-
-let meuTelefone = "(83) 98653-3193";
-let meutelefoneElement = document.getElementById("telefone");
-meutelefoneElement.innerHTML = meuTelefone;
-
-let minhacidade = " Rua carolino cardoso, 79 / João Pessoa, PB";
-let minhacidadeElement = document.getElementById("cidade");
-minhacidadeElement.innerHTML = minhacidade;
-
-let minhabiografia = "Estou no 3° periodo de ADS, busco conhecimento constante por fora, em plataformas como Udemy, Dev media. Sigo firme em busca da minha primeira oportunidade!";
-let minhabiografiaElement = document.getElementById("biografia");
-minhabiografiaElement.innerHTML = minhabiografia;
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
+    let meuNome = "Davi Diaz!";
+    let meunomeElement = document.getElementById("meunome");
+    meunomeElement.innerHTML = meuNome;
+
+    let minhaIdade = "20";
+    let minhaIdadeElement = document.getElementById("idade");
+    minhaIdadeElement.innerHTML = minhaIdade;
+
+    let meuEmail = "felipediaz3974@gmail.com";
+    let meuemailElement = document.getElementById("email");
+    meuemailElement.innerHTML = meuEmail;
+
+    let meuTelefone = "(83) 98653-3193";
+    let meutelefoneElement = document.getElementById("telefone");
+    meutelefoneElement.innerHTML = meuTelefone;
+
+    let minhacidade = " Rua carolino cardoso, 79 / João Pessoa, PB";
+    let minhacidadeElement = document.getElementById("cidade");
+    minhacidadeElement.innerHTML = minhacidade;
+
+    let minhabiografia = "Estou no 3° periodo de ADS, busco conhecimento constante por fora, em plataformas como Udemy, Dev media. Sigo firme em busca da minha primeira oportunidade!";
+    let minhabiografiaElement = document.getElementById("biografia");
+    minhabiografiaElement.innerHTML = minhabiografia;
+
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
@@ -50,10 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnMenu = document.getElementById('btn-menu');
     const menuMobile = document.getElementById('menu-mobile');
     const overlayMenu = document.getElementById('overlay-menu');
+    const btnFecharMenu = document.getElementById('fechar-menu');
 
     btnMenu.addEventListener('click', function () {
         menuMobile.classList.toggle('abrir-menu');
         overlayMenu.classList.toggle('active');
+    });
+
+    btnFecharMenu.addEventListener('click', function () {
+        menuMobile.classList.remove('abrir-menu');
+        overlayMenu.classList.remove('active');
     });
 
     overlayMenu.addEventListener('click', function () {
@@ -75,22 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo(scrollOptions);
     });
 
-
-
-
-
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    
     const form = document.getElementById('atualizarForm');
-
-    // Ouvinte de evento para o envio do formulário
     form.addEventListener('submit', function (event) {
-        // Evita o comportamento padrão de envio do formulário
         event.preventDefault();
 
-        // Atualiza os dados com as informações do formulário
         const nomeAtualizado = document.getElementById('nome_form').value;
         const emailAtualizado = document.getElementById('email_form').value;
         const celularAtualizado = document.getElementById('celular_form').value;
@@ -98,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const biografiaAtualizada = document.getElementById('biografia_form').value;
         const idadeAtualizada = document.getElementById('idade_form').value;
 
-        // Atualiza os elementos HTML com as novas informações
         document.getElementById('meunome').textContent = nomeAtualizado;
         document.getElementById('email').textContent = emailAtualizado;
         document.getElementById('telefone').textContent = celularAtualizado;
@@ -107,4 +98,3 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('idade').textContent = idadeAtualizada;
     });
 });
-
